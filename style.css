@@ -50,3 +50,75 @@ a:hover {
 .logo img {
   height: 2rem;
 }
+
+#res-nav {
+  display: none;
+}
+
+.res-menu {
+  position: relative;
+  display: inline-block;
+}
+.res-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+}
+.res-icon span {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links.open {
+  max-height: 300px;
+}
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links li {
+  list-style: none;
+}
+.res-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.res-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.res-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+.res-icon span:first-child {
+  transform: none;
+}
+.res-icon span:nth-child(2) {
+  opacity: 1;
+}
+.res-icon span:last-child {
+  transform: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  #res-nav {
+    display: flex;
+  }
+}

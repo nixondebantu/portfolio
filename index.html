@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfolio - Nixon</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo"><img src="/assets/logo.png" alt="NIXON" /></div>
+      <div class="logo"><img src="./assets/logo.png" alt="NIXON" /></div>
       <div class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="/">Experience</a></li>
@@ -16,5 +16,22 @@
         <li><a href="/">Contact</a></li>
       </div>
     </nav>
+    <nav id="res-nav">
+      <div class="logo"><img src="./assets/logo.png" alt="NIXON" /></div>
+      <div class="res-menu">
+        <div class="res-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/" onclick="togglemenu()">Home</a></li>
+          <li><a href="/" onclick="togglemenu()">Experience</a></li>
+          <li><a href="/" onclick="togglemenu()">Projects</a></li>
+          <li><a href="/" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <script src="./script.js"></script>
   </body>
 </html>
